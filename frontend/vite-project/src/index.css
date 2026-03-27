@@ -1,0 +1,175 @@
+/* App.css */
+
+body, html, #root, .App {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0b3d91, #000000);
+  color: white;
+}
+
+.login-container h1 {
+  margin-bottom: 20px;
+}
+
+.login-container input {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+}
+
+.login-container button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #f0ad4e;
+  color: #000;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.login-container button:hover {
+  background-color: #ec971f;
+}
+
+.dashboard {
+  padding: 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0b3d91, #000000);
+  color: #fff;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #d9534f;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.logout:hover {
+  background-color: #c9302c;
+}
+
+.analytics {
+  margin: 20px 0;
+  background-color: #1e1e1e;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* SEARCH BAR */
+.dashboard input[type="text"] {
+  width: 80%; /* expanded search bar */
+  max-width: 600px;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Leads list */
+.leads-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center; /* center the cards */
+}
+
+.lead-card {
+  background-color: #fff;
+  color: #000;
+  padding: 15px;
+  border-radius: 10px;
+  width: 300px; /* default width for small screens */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  flex: 1 1 300px; /* allows cards to grow */
+  max-width: 400px; /* new max width on larger screens */
+}
+
+.lead-card select, .lead-card textarea {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.lead-card button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #0b3d91;
+  color: #fff;
+  cursor: pointer;
+}
+
+.lead-card button:hover {
+  background-color: #062759;
+}
+
+textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+
+/* Analytics button at bottom */
+.show-analytics {
+  padding: 10px 20px;
+  margin: 20px auto 0;
+  display: block;
+  border-radius: 5px;
+  border: none;
+  background-color: #5bc0de;
+  color: #fff;
+  cursor: pointer;
+}
+
+.show-analytics:hover {
+  background-color: #31b0d5;
+}
+
+.new-lead-form {
+  background-color: #1e1e1e;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.new-lead-form input,
+.new-lead-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.new-lead-form button {
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #5cb85c;
+  color: white;
+  cursor: pointer;
+}
+
+.new-lead-form button:hover {
+  background-color: #4cae4c;
+}
