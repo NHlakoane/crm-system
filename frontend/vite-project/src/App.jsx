@@ -13,7 +13,7 @@ import {
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://crm-backend-53ac.onrender.com";
 
 function App() {
   const [leads, setLeads] = useState([]);
